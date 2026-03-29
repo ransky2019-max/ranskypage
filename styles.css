@@ -1,0 +1,298 @@
+/* BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1d1d1d;
+  font-size: 1rem; 
+}
+
+.container {
+  width: 95%;
+  max-width: 62.5rem; 
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HEADER & NAV */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 0.625rem 0; 
+}
+
+header .logo img {
+  margin: 0 auto 0.625rem auto; 
+  height: 6.25rem; 
+}
+
+nav {
+  width: 100%;
+  border-top: 1px solid #8cb7c9;
+  border-bottom: 1px solid #8cb7c9;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.3125rem 0; 
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 1.25rem; 
+  color: #1d1d1d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #8cb7c9;
+}
+
+nav a.active {
+  font-weight: 400;
+}
+
+/* TIPOGRAFÍA */
+h1 {
+  text-align: left;
+  line-height: 1.1;
+  font-size: 3rem; 
+  padding-bottom: 1.25rem; 
+}
+
+
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.312rem; 
+  margin: 0 ;
+  padding: 0;
+  }
+
+h2 {
+  font-size: 2.5rem; 
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1875rem; 
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background: #f6f6f6;
+  padding: 1.25rem 0; 
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 2.5rem; 
+}
+
+/* ENLACES EXTERNOS */
+a.external {
+  color: #1d1d1d;
+  text-decoration: underline;
+  background-image: url('img/external-link.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 1rem; 
+}
+
+a.external:hover {
+  color: #8cb7c9;
+  background-image: url('img/external-link-modif.svg');
+}
+
+/* FIGURA CON SOMBRA */
+.shadow {
+  margin: 1.5625rem 0; 
+}
+
+.shadow figcaption {
+  text-align: justify;
+  font-size: 2rem; 
+  color: #1d1d1d;
+  margin: 0.625rem auto 0 auto; 
+  max-width: 65%;
+}
+
+/* CITA EN BLOQUE */
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 1.375rem; 
+  font-weight: 700;
+  max-width: 75%;
+  border-left: 4px solid #8cb7c9;
+  margin: 1.875rem auto; 
+  text-align: left;
+  padding-left: 0.625rem; 
+}
+
+.author {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+  padding-left: 8.125rem; 
+  display: block;
+  margin-bottom: 1.875rem;
+}
+
+/* VIDEO */
+.video {
+  margin: 2.1875rem 0; 
+}
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: 420px;
+  border: none;
+}
+
+.video-caption {
+  font-size: 0.875rem; 
+  color: #1d1d1d;
+  margin-top: 0.375rem; 
+}
+
+/* ODS */
+.ods {
+  display: flex;
+  gap: 0.25rem; 
+  margin-top: 1.875rem; 
+  flex-wrap: wrap;
+}
+
+.ods img {
+  width: 5rem; 
+}
+
+/* ABREVIATURAS */
+abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+/* PÁGINA CLIMA URBANO */
+.clima-text {
+  text-align: left;
+  font-size: 1.875rem; 
+  color: #1d1d1d;
+  margin: 0.325rem auto 0 8.357rem;
+  max-width: 65%;
+}
+
+/* LISTAS ANIDADAS */
+.nivel1 {
+  list-style-type: square;
+  padding-left: 1.25rem; 
+}
+
+.nivel1 > li::marker {
+  color: #8cb7c9;
+}
+
+.nivel1 > li > span {
+  font-size: 1.375rem; 
+}
+
+.nivel2 {
+  list-style-type: disc;
+  padding-left: 1.5625rem; 
+  margin-top: 0.5rem; 
+}
+
+.nivel2 > li::marker {
+  color: #8cb7c9;
+}
+
+.nivel3 {
+  list-style-type: circle;
+  padding-left: 1.5625rem; 
+  margin-top: 0.5rem; 
+}
+
+.nivel3 > li::marker {
+  color: #8cb7c9;
+}
+
+.nivel1 li,
+.nivel2 li,
+.nivel3 li {
+  color: #1d1d1d;
+}
+
+/* PÁGINA CONCEPTOS CLAVE */
+.indice {
+  border: 1px solid #8cb7c9;
+  padding: 0.9375rem; 
+  margin: 1.25rem 0; 
+}
+
+.indice h2 {
+  margin-top: 0;
+  font-size: 1.375rem;
+}
+
+.indice ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indice li {
+  border-bottom: 1px solid #8cb7c9;
+  padding: 0.5rem 0;
+}
+
+.indice li:last-child {
+  border-bottom: none;
+}
+
+.indice a {
+  color: #1d1d1d;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.indice a:hover {
+  color: #8cb7c9;
+}
+
+/* ASTERISCOS COMO IMAGEN */
+.conceptos h2 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.5rem 0;
+  position: relative;
+  padding-left: 1.4rem; 
+}
+
+.conceptos h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("img/icon-asterisk.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.conceptos p {
+  margin: 1rem 0;
+  padding-left: 1.4rem; 
+}
